@@ -67,7 +67,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /opt/*
 
-
 # Forward logs to Docker
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
     ln -sf /dev/stderr /var/log/nginx/error.log
